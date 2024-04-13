@@ -1,0 +1,157 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.menu__item:visited {
+    color: var(--black);
+}
+
+.menu__counter {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 28px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    padding: 0 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__img {
+    background-color: #b8b8b8;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: start;
+    height: 180px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--white);
+    min-height: 150px;
+    padding: 10px;
+}
+
+.card__tag {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 3px;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 110%;
+    margin-bottom: 8px;
+}
+
+.card__author {
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+
+.card__footer {
+    margin-top: auto;
+    display: flex;
+}
+
+.button_add {
+    background: none;
+    border-radius: 6px;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.button_add-active {
+    background: #fff;
+}
+
+.cards-list__loading-text {
+    text-align: center;
+    font-size: 18px;
+    color: #a1a1a1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 20px;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search__wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.search__wrapper > img {
+    position: absolute;
+    left: 15px;
+    top: 16px;
+}
+
+.search__input {
+    background-color: #dedede;
+    border: none;
+    border-radius: 5px;
+    color: #252525;
+    padding: 15px 30px 15px 50px;
+    flex: 1;
+}
+
+.search__input::placeholder {
+    color: #383838;
+    
+}
+
+.search__wrapper > button {
+    border: none;
+    background-color: var(--black);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
